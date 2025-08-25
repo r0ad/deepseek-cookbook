@@ -1,11 +1,11 @@
-# Classification with Claude
+# 使用 DeepSeek 进行分类
 
-Learn how to use Claude for classification tasks, especially in scenarios with complex business rules and limited training data.
+学习如何使用 DeepSeek 进行分类任务，特别是在具有复杂业务规则和有限训练数据的场景中。
 
-## Contents
+## 内容
 
-- `guide.ipynb`: Main tutorial notebook
-- `data/`: Data files for examples and testing
-- `evaluation/`: Evaluation scripts using Promptfoo
+- `guide.ipynb`: 主教程笔记本
+- `data/`: 示例和测试的数据文件
+- `evaluation/`: 使用 Promptfoo 的评估脚本
 
-For evaluation instructions, see `evaluation/README.md`.
+有关评估说明，请参见 `evaluation/README.md`。

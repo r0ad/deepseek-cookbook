@@ -1,69 +1,77 @@
-# Anthropic Cookbook
+# DeepSeek Cookbook (中文版)
 
-The Anthropic Cookbook provides code and guides designed to help developers build with Claude, offering copy-able code snippets that you can easily integrate into your own projects.
+DeepSeek Cookbook 提供了旨在帮助开发者使用 DeepSeek 构建应用程序的代码和指南，提供了可轻松集成到您自己项目中的可复制代码片段。
 
-## Prerequisites
+本项目基于 [anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook)。
 
-To make the most of the examples in this cookbook, you'll need an Anthropic API key (sign up for free [here](https://www.anthropic.com)).
+API 使用[Deeopth Anthropic 兼容 API](https://api.deepseek.com/anthropic)。
 
-While the code examples are primarily written in Python, the concepts can be adapted to any programming language that supports interaction with the Anthropic API.
+## 关于 DeepSeek API
 
-If you're new to working with the Anthropic API, we recommend starting with our [Anthropic API Fundamentals course](https://github.com/anthropics/courses/tree/master/anthropic_api_fundamentals) to get a solid foundation.
+DeepSeek 支持 OpenAI 和 Anthropic 协议。本文档使用 Anthropic 协议进行交互。
 
-## Explore Further
+## 先决条件
 
-Looking for more resources to enhance your experience with Claude and AI assistants? Check out these helpful links:
+要充分利用本 cookbook 中的示例，您需要一个 DeepSeek API 密钥。
 
-- [Anthropic developer documentation](https://docs.anthropic.com/claude/docs/guide-to-anthropics-prompt-engineering-resources)
-- [Anthropic support docs](https://support.anthropic.com)
-- [Anthropic Discord community](https://www.anthropic.com/discord)
+虽然代码示例主要使用 Python 编写，但这些概念可以适应任何支持与 DeepSeek API 交互的编程语言。
 
-## Contributing
+如果您是第一次使用 DeepSeek API，我们建议从基础开始，以获得坚实的基础。
 
-The Anthropic Cookbook thrives on the contributions of the developer community. We value your input, whether it's submitting an idea, fixing a typo, adding a new guide, or improving an existing one. By contributing, you help make this resource even more valuable for everyone.
+## 进一步探索
 
-To avoid duplication of efforts, please review the existing issues and pull requests before contributing.
+寻找更多资源来增强您使用 DeepSeek 和 AI 助手的体验？查看这些有用的链接：
 
-If you have ideas for new examples or guides, share them on the [issues page](https://github.com/anthropics/anthropic-cookbook/issues).
+- [DeepSeek 开发者文档](https://api-docs.deepseek.com/)
 
-## Table of recipes
+## 贡献
 
-### Skills
-- [Classification](https://github.com/anthropics/anthropic-cookbook/tree/main/skills/classification): Explore techniques for text and data classification using Claude.
-- [Retrieval Augmented Generation](https://github.com/anthropics/anthropic-cookbook/tree/main/skills/retrieval_augmented_generation): Learn how to enhance Claude's responses with external knowledge.
-- [Summarization](https://github.com/anthropics/anthropic-cookbook/tree/main/skills/summarization): Discover techniques for effective text summarization with Claude.
+为了避免重复工作，请在贡献之前查看现有的问题和拉取请求。
 
-### Tool Use and Integration
-- [Tool use](https://github.com/anthropics/anthropic-cookbook/tree/main/tool_use): Learn how to integrate Claude with external tools and functions to extend its capabilities.
-  - [Customer service agent](https://github.com/anthropics/anthropic-cookbook/blob/main/tool_use/customer_service_agent.ipynb)
-  - [Calculator integration](https://github.com/anthropics/anthropic-cookbook/blob/main/tool_use/calculator_tool.ipynb)
-  - [SQL queries](https://github.com/anthropics/anthropic-cookbook/blob/main/misc/how_to_make_sql_queries.ipynb)
+如果您对新示例或指南有想法，请提交问题。
 
-### Third-Party Integrations
-- [Retrieval augmented generation](https://github.com/anthropics/anthropic-cookbook/tree/main/third_party): Supplement Claude's knowledge with external data sources.
-  - [Vector databases (Pinecone)](https://github.com/anthropics/anthropic-cookbook/blob/main/third_party/Pinecone/rag_using_pinecone.ipynb)
-  - [Wikipedia](https://github.com/anthropics/anthropic-cookbook/blob/main/third_party/Wikipedia/wikipedia-search-cookbook.ipynb/)
-  - [Web pages](https://github.com/anthropics/anthropic-cookbook/blob/main/misc/read_web_pages_with_haiku.ipynb)
-  - [Internet search (Brave)](https://github.com/anthropics/anthropic-cookbook/blob/main/third_party/Brave/web_search_using_brave.ipynb)
-- [Embeddings with Voyage AI](https://github.com/anthropics/anthropic-cookbook/blob/main/third_party/VoyageAI/how_to_create_embeddings.md)
+## 食谱目录
 
-### Multimodal Capabilities
-- [Vision with Claude](https://github.com/anthropics/anthropic-cookbook/tree/main/multimodal): 
-  - [Getting started with images](https://github.com/anthropics/anthropic-cookbook/blob/main/multimodal/getting_started_with_vision.ipynb)
-  - [Best practices for vision](https://github.com/anthropics/anthropic-cookbook/blob/main/multimodal/best_practices_for_vision.ipynb)
-  - [Interpreting charts and graphs](https://github.com/anthropics/anthropic-cookbook/blob/main/multimodal/reading_charts_graphs_powerpoints.ipynb)
-  - [Extracting content from forms](https://github.com/anthropics/anthropic-cookbook/blob/main/multimodal/how_to_transcribe_text.ipynb)
-- [Generate images with Claude](https://github.com/anthropics/anthropic-cookbook/blob/main/misc/illustrated_responses.ipynb): Use Claude with Stable Diffusion for image generation.
+### 技能
 
-### Advanced Techniques
-- [Sub-agents](https://github.com/anthropics/anthropic-cookbook/blob/main/multimodal/using_sub_agents.ipynb): Learn how to use Haiku as a sub-agent in combination with Opus.
-- [Upload PDFs to Claude](https://github.com/anthropics/anthropic-cookbook/blob/main/misc/pdf_upload_summarization.ipynb): Parse and pass PDFs as text to Claude.
-- [Automated evaluations](https://github.com/anthropics/anthropic-cookbook/blob/main/misc/building_evals.ipynb): Use Claude to automate the prompt evaluation process.
-- [Enable JSON mode](https://github.com/anthropics/anthropic-cookbook/blob/main/misc/how_to_enable_json_mode.ipynb): Ensure consistent JSON output from Claude.
-- [Create a moderation filter](https://github.com/anthropics/anthropic-cookbook/blob/main/misc/building_moderation_filter.ipynb): Use Claude to create a content moderation filter for your application.
-- [Prompt caching](https://github.com/anthropics/anthropic-cookbook/blob/main/misc/prompt_caching.ipynb): Learn techniques for efficient prompt caching with Claude.
+- [分类](./skills/classification): 探索使用 DeepSeek 进行文本和数据分类的技术。
+- [检索增强生成](./skills/retrieval_augmented_generation): 学习如何使用外部知识增强 DeepSeek 的响应。
+- [摘要](./skills/summarization): 发现使用 DeepSeek 进行有效文本摘要的技术。
 
-## Additional Resources
+### 工具使用和集成
 
-- [Anthropic on AWS](https://github.com/aws-samples/anthropic-on-aws): Explore examples and solutions for using Claude on AWS infrastructure.
-- [AWS Samples](https://github.com/aws-samples/): A collection of code samples from AWS which can be adapted for use with Claude. Note that some samples may require modification to work optimally with Claude.
+- [工具使用](./tool_use): 学习如何将 DeepSeek 与外部工具和函数集成以扩展其功能。
+  - [客户服务代理](./tool_use/customer_service_agent.ipynb)
+  - [计算器集成](./tool_use/calculator_tool.ipynb)
+  - [SQL 查询](./misc/how_to_make_sql_queries.ipynb)
+
+### 第三方集成
+
+- [检索增强生成](./third_party): 使用外部数据源补充 DeepSeek 的知识。
+  - [向量数据库 (Pinecone)](./third_party/Pinecone/rag_using_pinecone.ipynb)
+  - [维基百科](./third_party/Wikipedia/wikipedia-search-cookbook.ipynb/)
+  - [网页](./misc/read_web_pages_with_haiku.ipynb)
+  - [网络搜索 (Brave)](./third_party/Brave/web_search_using_brave.ipynb)
+- [使用 Voyage AI 创建嵌入](./third_party/VoyageAI/how_to_create_embeddings.md)
+
+### 多模态功能
+
+- [DeepSeek 视觉功能](./multimodal):
+  - [图像入门](./multimodal/getting_started_with_vision.ipynb)
+  - [视觉最佳实践](./multimodal/best_practices_for_vision.ipynb)
+  - [解释图表和图形](./multimodal/reading_charts_graphs_powerpoints.ipynb)
+  - [从表单中提取内容](./multimodal/how_to_transcribe_text.ipynb)
+- [使用 DeepSeek 生成图像](./misc/illustrated_responses.ipynb): 将 DeepSeek 与 Stable Diffusion 结合使用进行图像生成。
+
+### 高级技术
+
+- [子代理](./multimodal/using_sub_agents.ipynb): 学习如何将 DeepSeek 作为子代理使用。
+- [上传 PDF 到 DeepSeek](./misc/pdf_upload_summarization.ipynb): 解析并将 PDF 作为文本传递给 DeepSeek。
+- [自动化评估](./misc/building_evals.ipynb): 使用 DeepSeek 自动化提示评估过程。
+- [启用 JSON 模式](./misc/how_to_enable_json_mode.ipynb): 确保从 DeepSeek 获得一致的 JSON 输出。
+- [创建内容过滤器](./misc/building_moderation_filter.ipynb): 使用 DeepSeek 为您的应用程序创建内容过滤器。
+- [提示缓存](./misc/prompt_caching.ipynb): 学习使用 DeepSeek 进行高效提示缓存的技术。
+
+## 额外资源
+
+- 查看 DeepSeek 官方文档获取更多示例和解决方案。
