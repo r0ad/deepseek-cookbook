@@ -71,7 +71,12 @@ DeepSeek 支持 OpenAI 和 Anthropic 协议。本文档使用 Anthropic 协议�
 使用的是 [jbeno/cursor-notebook-mcp](https://github.com/jbeno/cursor-notebook-mcp) 工具。
 
 - 安装 mcp 工具：`pip install cursor-notebook-mcp`
-- 启动可流式传输的 HTTP 传输协议的 mcp 服务器：`cursor-notebook-mcp --transport streamable-http --allow-root ./ --host 127.0.0.1 --port 8080`
+- 启动可流式传输的 HTTP 传输协议的 mcp 服务器：
+
+  ```shell
+  cursor-notebook-mcp --transport streamable-http --allow-root /path/to/your/notebooks --host 127.0.0.1 --port 8080
+  ```
+
 - 配置 AI IDE（如 Cursor、Trae）：
 
   ```json
