@@ -24,12 +24,6 @@ DeepSeek 支持 OpenAI 和 Anthropic 协议。本文档使用 Anthropic 协议�
 
 - [DeepSeek 开发者文档](https://api-docs.deepseek.com/)
 
-## 贡献
-
-为了避免重复工作，请在贡献之前查看现有的问题和拉取请求。
-
-如果您对新示例或指南有想法，请提交问题。
-
 ## 食谱目录
 
 ### 技能
@@ -72,6 +66,20 @@ DeepSeek 支持 OpenAI 和 Anthropic 协议。本文档使用 Anthropic 协议�
 - [创建内容过滤器](./misc/building_moderation_filter.ipynb): 使用 DeepSeek 为您的应用程序创建内容过滤器。
 - [提示缓存](./misc/prompt_caching.ipynb): 学习使用 DeepSeek 进行高效提示缓存的技术。
 
-## 额外资源
+## 使用 mcp 编辑 jupyter notebook
 
-- 查看 DeepSeek 官方文档获取更多示例和解决方案。
+使用的是 [jbeno/cursor-notebook-mcp](https://github.com/jbeno/cursor-notebook-mcp) 工具。
+
+- 安装 mcp 工具：`pip install cursor-notebook-mcp`
+- 启动可流式传输的 HTTP 传输协议的 mcp 服务器：`cursor-notebook-mcp --transport streamable-http --allow-root ./ --host 127.0.0.1 --port 8080`
+- 配置 AI IDE（如 Cursor、Trae）：
+
+  ```json
+  {
+    "mcpServers": {
+      "notebook_mcp": {
+        "url": "http://127.0.0.1:8080/mcp"
+      }
+    }
+  }
+  ```
